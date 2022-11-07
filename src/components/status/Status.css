@@ -1,0 +1,26 @@
+.status-box {
+  min-height: 25px !important;
+  height: 150px !important;
+  margin-top: 250px !important;
+  padding-top: 30px !important;
+  cursor: pointer;
+}
+
+.box-status {
+  background: rgba(49, 69, 125, 0.4);
+  color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  min-height: 450px;
+  margin: 100px auto;
+  padding: 50px;
+  transition: all 0.2s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    padding: 20px;
+    width: 90%;
+  }
+}

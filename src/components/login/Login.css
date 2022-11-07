@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#login-app {
+  background: url("https://www.xmple.com/wallpaper/purple-gradient-blue-linear-1920x1080-c2-87cefa-da70d6-a-195-f-14.svg");
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.box {
+  background: rgba(49, 69, 125, 0.4);
+  color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  min-height: 350px;
+  margin: 100px auto;
+  padding: 50px;
+  transition: all .2s ease-in;
+}
+
+@media screen and (max-width:768px) {
+  .box {
+    padding: 20px;
+    width: 90%;
+  }
+}
+
+.error-msg {
+  color: #ff6d6d;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number] {
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid #d0d0d0;
+  height: 25px;
+  margin-bottom: 15px;
+  padding: 10px 3px 10px;
+  outline: none;
+  font-size: 14px ;
+}
+
+textarea::placeholder,
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=number]::placeholder {
+  color: rgba(246, 246, 246, 0.892) !important;
+}
+
+textarea:hover::placeholder,
+input[type=text]:hover::placeholder,
+input[type=email]:hover::placeholder,
+input[type=password]:hover::placeholder,
+input[type=number]:hover::placeholder {
+  color: rgba(255, 255, 255, 0.946) !important;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=number]:focus {
+  border-bottom: 1px solid #879aca;
+}
+
+input[type=text]:focus::placeholder,
+input[type=email]:focus::placeholder,
+input[type=password]:focus::placeholder,
+input[type=number]:focus::placeholder {
+  visibility: hidden;
+}
+
+
+
+
+.btn {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 10px;
+  text-align: center;
+  user-select: none;
+}
+
+.btn:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 10px;
+  text-align: center;
+  user-select: none;
+}
+
+.btn-login {
+  margin-top: 22px;
+  background: rgba(26, 34, 99, 0.5);
+  color: white;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+
+
+.btn-login:hover {
+  background: rgba(26, 34, 99, 0.3);
+}
+
+.display-inline-block {
+  display: inline-block !important;
+}
+
+.display-block {
+  display: block !important;
+}
+
+.display-inline {
+  display: inline !important;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.form{
+  margin: 80px 0 ;
+}
+
+.signupNavigation {
+  text-align: center;
+  padding-top: 12px;
+  color: #fff;
+}

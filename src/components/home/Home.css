@@ -1,0 +1,31 @@
+.homeParentDiv{
+  background: url("https://www.xmple.com/wallpaper/purple-gradient-blue-linear-1920x1080-c2-87cefa-da70d6-a-195-f-14.svg");
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.apply-now {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+.home-box{
+  min-height: 25px !important;
+  height: 100px !important;
+  margin-top: 250px !important;
+  padding-top: 30px !important;
+  cursor: pointer;
+}
+
+.home-box:hover{
+  background: rgba(49, 69, 125, 0.45);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  
+}
+
+.home-box:active{
+    width: 400px;
+    height: 40px;
+    transition: all .2s ease-in;
+}

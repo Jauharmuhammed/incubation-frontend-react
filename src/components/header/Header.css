@@ -1,0 +1,53 @@
+.headerParentDiv{
+  position: fixed;
+  background: rgba(49, 69, 125, 0.4);
+  color: rgb(11, 10, 10);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  top: 0;
+  height: 100px;
+  padding: 20px 0px;
+  z-index: 1000;
+  transition: all .2s ease-in;
+}
+
+.headerParentDiv .header{
+  margin-top: 4px;
+  margin-left:20px ;
+}
+
+.headerParentDiv .header a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn-logout {
+  background: rgba(26, 34, 99, 0.5);
+  color: white;
+  margin-right: 20px;
+  padding: 15px 30px !important;
+}
+
+.btn-logout:hover {
+  background: rgba(26, 34, 99, 0.5);
+  color: white;
+  margin-right: 20px;
+  padding: 15px 30px !important;
+}
+
+.headerParentDiv .headerContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerParentDiv .contentRight {
+  display: flex;
+}
+
+.headerParentDiv .useLoggedIN {
+  margin: auto 10px;
+}
+
+.headerParentDiv .useLoggedIN strong{
+  text-transform: capitalize;
+}

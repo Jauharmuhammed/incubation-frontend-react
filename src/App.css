@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.gradient {
+  background: url("https://www.xmple.com/wallpaper/purple-gradient-blue-linear-1920x1080-c2-87cefa-da70d6-a-195-f-14.svg");
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.slotBox {
+  position: relative;
+  background-color: rgba(49, 69, 125, 0.4);
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.slotBox:hover {
+  background-color: rgba(49, 69, 125, 0.505);
+  box-shadow: 1px ;
+}
+
+.slotText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
