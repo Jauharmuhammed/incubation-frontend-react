@@ -16,7 +16,6 @@ import NewApplicationTable from './components/admin/NewApplicationTable'
 import ApplicationView from "./components/admin/ApplicationView";
 import AdminRestrictedRoute from "./utils/AdminRestrictedRoute";
 import SlotManagement from "./components/admin/SlotManagement";
-import UserManagement from "./components/admin/UserManagement";
 
 
 function App() {

@@ -7,7 +7,7 @@ import { MessagesContext } from '../../context/Messages'
 
 function Incubation() {
   const { user, getIncubation} = useContext(AuthContext)
-  const { incubationErrorMessage, setIncubationErrorMessage, incubationSuccessMessage, setIncubationSuccessMessage } = useContext(MessagesContext)
+  const { incubationErrorMessage, setIncubationErrorMessage, setIncubationSuccessMessage } = useContext(MessagesContext)
 
   const navigate = useNavigate()
 
@@ -31,12 +31,14 @@ function Incubation() {
   const [typeOfIncubation, setTypeOfIncubation] = useState('')
   const [businessProposal, setBusinessProposal] = useState('')
 
+  console.log(companyLogo);
+
   useEffect(() => {
     getIncubation();
     setIncubationErrorMessage('')
     setIncubationSuccessMessage('')
 
-  }, [])
+  })
   
 
   const submitForm = async (e) => {

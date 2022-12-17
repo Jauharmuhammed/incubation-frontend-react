@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
-import axiosInstance from "../../utils/axios";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import "./Home.css";
@@ -11,7 +10,7 @@ function Home() {
 
   useEffect(() => {
     getIncubation();
-  }, []);
+  });
 
   if (isFormSubmitted === "YES") {
     return (

@@ -5,13 +5,13 @@ import { MessagesContext } from '../../context/Messages'
 import './Login.css'
 
 function Login() {
-  const { successMessage, setSuccessMessage } = useContext(MessagesContext)
+  const { successMessage } = useContext(MessagesContext)
   const { errorMessage, setErrorMessage } = useContext(MessagesContext)
   let {loginUser} = useContext(AuthContext)
 
   useEffect(() => {
     setErrorMessage('')
-  }, [])
+  },)
   
 
   return (

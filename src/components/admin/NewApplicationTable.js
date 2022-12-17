@@ -15,9 +15,9 @@ import { Button } from "@mui/material";
 import { ApplicationViewContext } from "../../context/ApplicationViewContext";
 import { Stack } from "@mui/system";
 
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
+// import Box from "@mui/material/Box";
+// import Typography from "@mui/material/Typography";
+// import Modal from "@mui/material/Modal";
 
 const columns = [
   { id: "id", label: "Sl.No", minWidth: 170 },
@@ -56,34 +56,36 @@ export default function StickyHeadTable() {
   const [approvedButton, setApprovedButton] = useState([]);
 
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
+  console.log(open);
+  // const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   const [open2, setOpen2] = React.useState(false);
-  const handleOpen2 = () => setOpen2(true);
+  console.log(open2);
+  // const handleOpen2 = () => setOpen2(true);
   const handleClose2 = () => setOpen2(false);
 
   const navigate = useNavigate();
 
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: 400,
-    bgcolor: "background.paper",
-    border: "2px solid #000",
-    boxShadow: 24,
-    p: 4,
-  };
+  // const style = {
+  //   position: "absolute",
+  //   top: "50%",
+  //   left: "50%",
+  //   transform: "translate(-50%, -50%)",
+  //   width: 400,
+  //   bgcolor: "background.paper",
+  //   border: "2px solid #000",
+  //   boxShadow: 24,
+  //   p: 4,
+  // };
 
   useEffect(() => {
     getNewApplications();
-  }, []);
+  });
 
   useEffect(() => {
     getPendingApplications();
-  }, [pendingApplication]);
+  });
 
   const getNewApplications = () => {
     axiosInstance
@@ -111,7 +113,7 @@ export default function StickyHeadTable() {
       });
   };
 
-  const handlePending = (e) => {
+  function handlePending (e){
     axiosInstance
       .get(`/incubations/pending/${e.target.id}/`, {
         headers: {
@@ -128,6 +130,7 @@ export default function StickyHeadTable() {
               if (obj.id !== response.data.id) {
                 return obj;
               }
+              return null
             })
           );
         }
@@ -175,6 +178,7 @@ export default function StickyHeadTable() {
               if (obj.id !== response.data.id) {
                 return obj;
               }
+              return null
             })
           );
           handleClose();
@@ -244,6 +248,7 @@ export default function StickyHeadTable() {
                             </TableCell>
                           );
                         }
+                        return null
                       })}
                       <TableCell align="center">
                         <Button
@@ -325,6 +330,7 @@ export default function StickyHeadTable() {
                             </TableCell>
                           );
                         }
+                        return null
                       })}
                       <TableCell align="center">
                         <Button

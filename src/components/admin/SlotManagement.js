@@ -26,7 +26,7 @@ function SlotManagement() {
     getWaitingApplications();
     getSlots();
     getCompany();
-  }, []);
+  });
 
   const handleOpen = (id) => {
     setSelectedSlot(id);
@@ -69,6 +69,7 @@ function SlotManagement() {
               if (obj.id !== selectedApplication){
                 return obj
               }
+              return null
             })
           )
           handleClose();
@@ -121,6 +122,7 @@ function SlotManagement() {
           obj.company_name
         )
       }
+      return null
     })
 
     return (

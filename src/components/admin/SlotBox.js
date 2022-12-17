@@ -1,4 +1,3 @@
-import { width } from '@mui/system'
 import React, { useContext, useState } from 'react'
 import { useEffect } from 'react';
 import { AuthContext } from '../../context/AuthContext';
@@ -25,7 +24,7 @@ function SlotBox(props) {
         if (props.text){
             getCompany()
         }
-    }, [])
+    })
     
     
     return (

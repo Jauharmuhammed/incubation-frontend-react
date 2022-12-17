@@ -22,7 +22,6 @@ import ListItemText from '@mui/material/ListItemText';
 import ListIcon from '@mui/icons-material/List';
 import PlaylistAddCheckIcon from '@mui/icons-material/PlaylistAddCheck';
 import AppsIcon from '@mui/icons-material/Apps';
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import LogoutIcon from '@mui/icons-material/Logout';
 import { AuthContext } from '../../context/AuthContext';
 
@@ -144,7 +143,7 @@ export default function PersistentDrawerLeft({ children }) {
             {sidebarItems.map((obj, index) => (
               <ListItem key={index} disablePadding
               >
-                <ListItemButton disableRipple onClick={()=> index === 4 ? logoutUser() : navigate(obj.on_click)}>
+                <ListItemButton disableRipple onClick={()=> index === 3 ? logoutUser() : navigate(obj.on_click)}>
                   <ListItemIcon>
                     {index === 0 && <ListIcon />}
                     {index === 1 && <PlaylistAddCheckIcon />}

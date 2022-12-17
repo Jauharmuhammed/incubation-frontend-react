@@ -7,7 +7,7 @@ function ApplicationView() {
     return (
         <div id='incubation-app'>
             <div className='incubation-box box'>
-                <form className='incubation-form' aria-readonly aria-disabled>
+                <form className='incubation-form'>
                     <div className='row'>
                         <div className='col-12 col-md-6'>
                             <label htmlFor="name">Name</label>

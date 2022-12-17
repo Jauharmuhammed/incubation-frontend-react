@@ -5,7 +5,7 @@ import './Signup.css'
 
 function Signup() {
   const navigate = useNavigate()
-  const { successMessage, setSuccessMessage } = useContext(MessagesContext)
+  const { setSuccessMessage } = useContext(MessagesContext)
   const { errorMessage, setErrorMessage } = useContext(MessagesContext)
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')

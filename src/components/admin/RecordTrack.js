@@ -1,5 +1,4 @@
-import React, { Fragment, useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
 import axiosInstance from "../../utils/axios";
 
 import Paper from "@mui/material/Paper";
@@ -11,10 +10,6 @@ import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import { AuthContext } from "../../context/AuthContext";
-import { Button } from "@mui/material";
-import { ApplicationViewContext } from "../../context/ApplicationViewContext";
-import { Stack } from "@mui/system";
-import Status from "../status/Status";
 
 import ProgressBar from '../status/ProgressBar'
 
@@ -39,17 +34,15 @@ const columns = [
 
 export default function StickyHeadTable() {
   const { authTokens } = useContext(AuthContext);
-  const { setApplicationDetails } = useContext(ApplicationViewContext);
 
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [allApplication, setAllApplication] = useState([]);
 
-  const navigate = useNavigate();
 
   useEffect(() => {
     getAllApplications();
-  }, []);
+  });
 
   const getAllApplications = () => {
     axiosInstance
@@ -118,6 +111,7 @@ export default function StickyHeadTable() {
                             </TableCell>
                           );
                         }
+                        return null
                       })}
                       <TableCell align="center">
                         <ProgressBar id={row.id}/>

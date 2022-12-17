@@ -46,11 +46,10 @@ export default function StickyHeadTable() {
     const [rowsPerPage, setRowsPerPage] = useState(10);
     const [users, setUsers] = useState([])
 
-    const navigate = useNavigate();
 
     useEffect(() => {
         getAllUsers();
-    }, []);
+    });
 
     const getAllUsers = () => {
         axiosInstance
@@ -119,6 +118,7 @@ export default function StickyHeadTable() {
                                                     </TableCell>
                                                 );
                                             }
+                                            return null
                                         })}
                                         <TableCell align="center">
                                             <Button
