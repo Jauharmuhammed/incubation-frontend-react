@@ -37,7 +37,7 @@
 
 
 ## About The Project
-This is the backend api using Django Rest Framework for an incubation management system where a user apply for a slot and admin can accept or deny application and allocate a slot. You can find the backend API of the project [here](https://incubation-frontend-react.netlify.app/)
+This is the backend api using Django Rest Framework for an incubation management system where a user apply for a slot and admin can accept or deny application and allocate a slot. You can find the backend API of the project [here](https://github.com/Jauharmuhammed/incubation-backend-django)
 
 - User Authentication using JWT (JSON Web Token).
 - One user can apply only once then he pormpted to an application status page where user can track and see the application status.
