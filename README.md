@@ -1,70 +1,240 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<div align="center">
+  <h3 align="center">Incubation Management System</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    <br />
+    <a href="https://github.com/Jauharmuhammed/incubation-frontend-react"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://incubation-frontend-react.netlify.app/">View Site</a>
+    ·
+    <a href="https://github.com/Jauharmuhammed/incubation-frontend-react/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Jauharmuhammed/incubation-frontend-react/issues">Request Feature</a>
+  </p>
+</div>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#frontend-setting-up">Frontend setting up</a>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About The Project
+This is the backend api using Django Rest Framework for an incubation management system where a user apply for a slot and admin can accept or deny application and allocate a slot. You can find the backend API of the project [here](https://incubation-frontend-react.netlify.app/)
 
-### `npm run build`
+- User Authentication using JWT (JSON Web Token).
+- One user can apply only once then he pormpted to an application status page where user can track and see the application status.
+- Admin can see the latest application in a seperate section.
+- Admin has the option to accept or deny the application.
+- Accecpted applications can be alloacated to a slot once and cannot be overriden.
+- Duplication slot allocations are not possible.
+- Admin can also track all the application and view the details any time.
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<table width="100%"> 
+<tr>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<td width="33%">
+<p align="center">
+Login Page
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/1.png">  
+</td>
+  <td width="33%">      
+<p align="center">
+Signup Page
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/2.png">
+</td> 
+  <td width="33%">      
+<p align="center">
+Home Page before application
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/3.png">
+</td> 
+</table>
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<table width="100%"> 
+<tr>
 
-### `npm run eject`
+<td width="33%">
+<p align="center">
+Application page
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/4.png">  
+</td>
+  <td width="33%">      
+<p align="center">
+Home Page after application
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/5.png">
+</td> 
+  <td width="33%">      
+<p align="center">
+Tracking / Status Page
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/6.png">
+</td> 
+</table>
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<table width="100%"> 
+<tr>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<td width="33%">
+<p align="center">
+Admin Application Management
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/7.png">  
+</td>
+  <td width="33%">      
+<p align="center">
+Admin Slot Management
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/8.png">
+</td> 
+  <td width="33%">      
+<p align="center">
+Admin Application Tracking
+</p>
+<img src="https://github.com/Jauharmuhammed/incubation-frontend-react/blob/main/assets/9.png">
+</td> 
+</table>
+<br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Built With
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
+![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Setting up Backend API 
 
-### Code Splitting
+This is a sample for Django Project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Clone the project. This will download the GitHub respository files onto your local machine.
 
-### Analyzing the Bundle Size
+```Shell
+git clone https://github.com/Jauharmuhammed/incubation-backend-django
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To get this project up and running you should start by having Python installed on your computer. It's advised you create a virtual environment to store your projects dependencies separately. You can install virtualenv with
 
-### Making a Progressive Web App
+```
+pip install virtualenv
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Clone or download this repository and open it in your editor of choice. In a terminal (mac/linux) or windows terminal, run the following command in the base directory of this project
 
-### Advanced Configuration
+```
+virtualenv venv
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+That will create a new folder `env` in your project directory. Next activate it with this command on mac/linux:
 
-### Deployment
+```
+source venv/bin/active
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Then install the project dependencies with
 
-### `npm run build` fails to minify
+```
+pip install -r requirements.txt
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Apply migrations and create your database
+```
+python manage.py migrate
+```
+Create a user with manage.py
+```
+python manage.py createsuperuser
+```
+
+Now you can run the project with this command
+
+```
+python manage.py runserver
+```
+
+<br>
+<br>
+<br>
+
+
+## Frontend setting up
+
+### Frontend Instructions (Create React App) 
+
+---> Navigate to the `frontend/` directory
+
+```Shell
+cd frontend
+```
+
+---> Install the project dependencies
+
+```Shell
+npm install
+```
+
+---> Start the development server on localhost:3000
+
+```Shell
+npm run start
+```
+
+---> Open your browser and navigate to either `http://localhost:3000 or http://127.0.0.1:3000`
+<br>
+<br>
+<br>
+
+
+
+## Contact
+
+<div align='left'>
+
+<a href="https://linkedin.com/in/jauharmuhammed" target="_blank">
+<img src="https://img.shields.io/badge/linkedin-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/>
+</a>
+	
+<a href="https://twitter.com/jauharmuhammed_" target="_blank">
+<img src="https://img.shields.io/badge/twitter-%2300acee.svg?color=1DA1F2&style=for-the-badge&logo=twitter&logoColor=white" alt=twitter style="margin-bottom: 5px;"/>
+</a>
+	
+<a href="mailto:jauharmuhammedk@gmail.com" target="_blank">
+<img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" t=mail style="margin-bottom: 5px;" />
+</a>
+	
+		
+<a href="https://codepen.io/jauharmuhammed" target="_blank">
+<img src="https://img.shields.io/badge/codepen-%23000000.svg?style=for-the-badge&logo=codepen&logoColor=white" t=mail style="margin-bottom: 5px;" />
+</a>
+
+</div>
+
+
