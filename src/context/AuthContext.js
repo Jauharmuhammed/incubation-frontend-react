@@ -116,8 +116,10 @@ export const AuthProvider = ({ children }) => {
       setAuthTokens(data);
       setUser(jwt_decode(data.access));
       localStorage.setItem("authTokens", JSON.stringify(data));
+      setLoading(false)
     } else {
       logoutUser();
+      setLoading(false)
     }
   };
 
@@ -132,6 +134,12 @@ export const AuthProvider = ({ children }) => {
     getIncubation: getIncubation,
   };
 
+  useEffect(() => {
+    if (loading){
+      updateToken()
+    }
+  })
+  
 
 
   useEffect(() => {
