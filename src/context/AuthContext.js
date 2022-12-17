@@ -135,11 +135,6 @@ export const AuthProvider = ({ children }) => {
 
 
   useEffect(() => {
-    if (loading) {
-      updateToken();
-      setLoading(false);
-    }
-
     const fourMinutes = 1000 * 60 * 4;
     let interval = setInterval(() => {
       if (authTokens) {
@@ -147,7 +142,7 @@ export const AuthProvider = ({ children }) => {
       }
     }, fourMinutes);
     return () => clearInterval(interval);
-  }, [authTokens, loading, updateToken]);
+  });
 
   return (
     <AuthContext.Provider value={contextData}>
