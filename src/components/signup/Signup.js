@@ -16,7 +16,7 @@ function Signup() {
   let signupUser = async (e) => {
     e.preventDefault()
     if ( username && email && password && confirmPassword){
-      let response = await fetch('http://127.0.0.1:8000/api/register/', {
+      let response = await fetch('https://incubation-backend-django-production.up.railway.app/api/register/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

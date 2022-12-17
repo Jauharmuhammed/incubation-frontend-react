@@ -14,7 +14,7 @@
 //   }, [])
 
 //   let getIncubation = async () => {
-//     let response = await fetch('http://127.0.0.1:8000/api/incubation/data/', {
+//     let response = await fetch('https://incubation-backend-django-production.up.railway.app/api/incubation/data/', {
 //       method: 'GET',
 //       headers: {
 //         'Content-Type': 'application/json',
